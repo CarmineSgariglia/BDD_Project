@@ -13,7 +13,7 @@ Questo repository contiene il progetto realizzato per l’esame di **Basi di Dat
 
 1. Clona il repository:
    ```bash
-   git clone https://github.com/tuo-username/nome-repo.git
+   git clone https://github.com/CarmineSgariglia/BDD_Project.git
    cd nome-repo
    ```
 
