@@ -1,34 +1,34 @@
-# 📘 Progetto Basi di Dati — Federico II (A.A. 2024/2025)
+# Progetto Basi di Dati — Federico II (A.A. 2024/2025)
 
 Questo repository contiene il progetto realizzato per l’esame di **Basi di Dati** presso l’Università degli Studi di Napoli Federico II nell’anno accademico 2024/2025.
 
-## 🧰 Tecnologie utilizzate
+## Tecnologie utilizzate
 
 - PostgreSQL
 - PL/pgSQL
 - LaTeX (per la documentazione)
 - draw.io (per la modellazione)
 
-## 🚀 Come eseguire il progetto
+## Come eseguire il progetto
 
 1. Clona il repository:
    ```bash
    git clone https://github.com/CarmineSgariglia/BDD_Project.git
-   cd nome-repo
+   cd BDD_Project
    ```
 
-2. Avvia PostgreSQL e crea un nuovo database:
-   ```sql
-   CREATE DATABASE progetto_basi_dati;
+2. Apri il terminale e crea un nuovo database:
+   ```bash
+   createdb -U postgres progettoBDD
    ```
 
 3. Esegui gli script SQL:
    ```bash
-   psql -U tuo_utente -d progetto_basi_dati -f BasiDati.sql
-   psql -U tuo_utente -d progetto_basi_dati -f popolamento.sql
+   pg_restore -U postgres -d progettoBDD -f BasiDati.sql
+  
    ```
 
-## 📄 Documentazione
+## Documentazione
 
 La documentazione completa in linguaggio LaTeX Include:
 
@@ -38,10 +38,10 @@ La documentazione completa in linguaggio LaTeX Include:
 - Progettazione fisica
 - Funzioni, procedure e altre automazioni
 
-## 📚 Autori
+## Autori
 
-- Carmine Sgariglia – *Studente di Informatica presso Federico II*
-- Mattia Lemma – *Studente di Informatica presso Federico II*
-- Massimo Russo – *Studente di Informatica presso Federico II*
+- Carmine Sgariglia 
+- Mattia Lemma 
+- Massimo Russo 
 
 
