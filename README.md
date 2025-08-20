@@ -22,7 +22,7 @@ Questo repository contiene il progetto realizzato per l’esame di **Basi di Dat
    createdb -U postgres progettoBDD
    ```
 
-3. Esegui gli script SQL:
+3. Esegui lo script:
    ```bash
    pg_restore -U postgres -d progettoBDD -f BasiDati.sql
   
