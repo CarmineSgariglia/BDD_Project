@@ -95,6 +95,14 @@ The complete technical documentation (≈30 pages) is written in **Italian**, as
 - **Project type**: Group coursework
 
 ---
+## Application Integration
+
+The database designed in this project is used as the persistence layer
+for a Java desktop application developed as part of an Object-Oriented
+Programming course project.
+
+The application repository is available at:
+https://github.com/Massimo127r/Applicativo_Aeroporto
 
 ## Contributors
 
