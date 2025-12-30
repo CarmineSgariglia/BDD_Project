@@ -1,47 +1,105 @@
-# Progetto Basi di Dati — Federico II (A.A. 2024/2025)
+# Airport Management Database System
+![Type](https://img.shields.io/badge/type-University%20Project-orange)
 
-Questo repository contiene il progetto realizzato per l’esame di **Basi di Dati** presso l’Università degli Studi di Napoli Federico II nell’anno accademico 2024/2025.
+University group project developed for the **Databases (Basi di Dati)** course  
+B.Sc. in Computer Science — University of Naples Federico II (A.Y. 2024/2025)
 
-## Tecnologie utilizzate
+This repository contains the design and implementation of a **relational database system**
+supporting core airport operations such as flight management, bookings, baggage tracking,
+and access control.
 
-- PostgreSQL
-- PL/pgSQL
-- LaTeX (per la documentazione)
-- draw.io (per la modellazione)
+The project focuses on **data modeling, integrity constraints, and database-side business logic**
+using PostgreSQL.
 
-## Come eseguire il progetto
+---
 
-1. Clona il repository:
-   ```bash
-   git clone https://github.com/CarmineSgariglia/BDD_Project.git
-   cd BDD_Project
-   ```
+## Project Overview
 
-2. Apri il terminale e crea un nuovo database:
-   ```bash
-   createdb -U postgres progettoBDD
-   ```
+The system models the operational workflow of an airport, supporting both
+**administrative users** and **passengers**.
 
-3. Esegui lo script:
-   ```bash
-   pg_restore -U postgres -d progettoBDD -f BasiDati.sql
-  
-   ```
+Key goals of the project include:
+- rigorous conceptual and logical data modeling
+- strong enforcement of business rules at the database level
+- consistency and correctness under concurrent operations
 
-## Documentazione
+The database schema and logic were designed following a structured, academic methodology
+(UML → relational model → physical implementation).
 
-La documentazione completa in linguaggio LaTeX Include:
+---
 
-- Introduzione al progetto
-- Progettazione concettuale
-- Progettazione logica
-- Progettazione fisica
-- Funzioni, procedure e altre automazioni
+## Core Features
 
-## Autori
+- **Flight management**
+  - creation and scheduling of flights
+  - gate assignment with temporal constraints
+  - real-time flight status tracking
 
-- Carmine Sgariglia 
-- Mattia Lemma 
-- Massimo Russo 
+- **Booking system**
+  - passenger reservations with seat assignment
+  - prevention of invalid or conflicting bookings
+  - automatic update of occupied seats
 
+- **Baggage tracking**
+  - lifecycle management (loaded, retrievable, lost)
+  - constraints enforced through triggers
 
+- **Role-based access control**
+  - separation between administrative and generic users
+  - privileged operations enforced via stored procedures
+
+---
+
+## Technical Highlights
+
+- **PostgreSQL** as DBMS
+- **UML class diagrams** for conceptual modeling
+- Extensive use of:
+  - CHECK constraints
+  - ENUM types
+  - UNIQUE indexes
+  - triggers and PL/pgSQL functions
+- Business rules enforced **inside the database**, not at application level
+
+---
+
+## Project Structure
+
+- SQL schema definition
+- Triggers and stored procedures for:
+  - booking validation
+  - state transitions
+  - consistency enforcement
+- UML diagrams (conceptual and logical design)
+- Full academic documentation (in Italian)
+
+---
+
+## Documentation
+
+The complete technical documentation (≈30 pages) is written in **Italian**, as required by the course, and includes:
+- conceptual design (UML)
+- logical schema
+- physical design
+- constraints, triggers, and stored procedures
+
+📄 See: `BDD_Documentation.pdf`
+
+---
+
+## Academic Context
+
+- **Course**: Databases (Basi di Dati)
+- **Degree**: B.Sc. in Computer Science
+- **University**: University of Naples Federico II
+- **Project type**: Group coursework
+
+---
+
+## Contributors
+
+- Carmine Sgariglia  
+- Mattia Lemma  
+- Massimo Russo  
+
+Each team member contributed to multiple aspects of the project;  
